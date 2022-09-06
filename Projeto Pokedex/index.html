@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="icon" href="./favicon_io/favicon-pokebola.png">
+     <link rel="stylesheet" href="./CSS/style.css">
+     
+     <title>Pokedéx</title>
+</head>
+<body>
+
+     <main>
+          <img src="#" alt="pokemon" class="pokemon__image">
+
+          <span class="circulo__principal"></span>
+
+          <span class="circulo__pequeno "></span>
+
+          <div class="div__treinador"></div>
+          <h2 class="treinador__titulo">Treinador</h2>
+          <h2 class="treinador__nome">Eike Hirsch</h2>
+
+          <span class="pokemon__tipo">Tipo: </span>
+          <span class="pokemon__tipo__Variavel"> </span>
+
+          <h1 class="pokemon__data">
+               <span class="pokemon__number"></span> -
+               <span class="pokemon__name"></span>
+          </h1>
+
+          <form class="form">
+               <input type="search" class="input__search" placeholder="Name or Number" required></input>
+          </form>
+
+          <div class="buttons">
+               <button class="button btn-prev">&lt; Anterior </button>
+               <button class="button btn-next">Próximo &gt;</button>
+          </div>
+
+          <button class="botao__escolher__pokemon">Add no time</button>
+
+          <img src="./Imagem/PokedexImagem.png" alt="Imagem de Pokedex" class="pokedex">
+          <img src="./favicon_io/favicon-pokebola.png" alt="Pokebolazinha" class="pokeball">
+          
+          <h3 class="pokeball__number"> /6</h3>
+          <h3 class="pokeball__counter"> </h3>
+
+          <h4 class="titulo__time__atual">Time atual</h4>
+          <ul class="pokemon__time">
+               <li class="primeiro__pokemon__escolhido"></li>
+               <li class="segundo__pokemon__escolhido"></li>
+               <li class="terceiro__pokemon__escolhido"></li>
+               <li class="quarto__pokemon__escolhido"></li>
+               <li class="quinto__pokemon__escolhido"></li>
+               <li class="sexto__pokemon__escolhido"></li>
+          </ul>
+
+     </main>
+     
+     <audio id="player" src="./15 Pewter City Theme.mp3" autoplay></audio>
+     <div class="div__player"> 
+          <button class="botoes__player" onclick="document.getElementById('player').play()">Play</button> 
+          <button class="botoes__player" onclick="document.getElementById('player').pause()">Pause</button> 
+          <button class="botoes__player" onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+          <button class="botoes__player" onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+     </div>
+
+     <h6 class="erro__timeCompleto">Erro: seu time já está completo!</h6>
+
+     <audio class="pokemonEscolhido" src="./14 Fanfare Item Get 1.mp3" autoplay></audio>
+
+     <script src="./js/javascript.js"></script>
+</body>
+</html>
